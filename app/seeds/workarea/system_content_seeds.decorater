@@ -2,6 +2,7 @@ module Workarea
   decorate SystemContentSeeds do
     def add_layout_content
       super
+      #Excersise 1
       puts "naveen content"
       html = '<span style="background: yellow;">Footer Messaging</span>'
       content = Content.for('Layout')

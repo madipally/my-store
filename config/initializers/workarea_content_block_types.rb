@@ -1,5 +1,5 @@
 Workarea.define_content_block_types do
-
+  #Excersise 3
   block_type 'Three Column Content Block' do
     tags %w(text) # TODO: Update Tags
     description 'TODO: add description'

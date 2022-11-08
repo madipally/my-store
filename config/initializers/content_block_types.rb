@@ -1,5 +1,6 @@
 Workarea::Content.define_block_types do
     # Tweak Hero content block from base (button styles)
+    #Excersise 2
     block_type 'Hero' do
       description 'Positionable button over a background image.'
   

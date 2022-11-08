@@ -1,4 +1,5 @@
 module Workarea
+  #Excersise 2
   decorate Storefront::ContentBlocks::HeroViewModel do
     def button_style_class
       return 'text-button' if data[:style] == 'Text Button'
