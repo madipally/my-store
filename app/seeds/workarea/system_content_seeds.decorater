@@ -1,0 +1,15 @@
+module Workarea
+  decorate SystemContentSeeds do
+    def add_layout_content
+      super
+      puts "naveen content"
+      html = '<span style="background: yellow;">Footer Messaging</span>'
+      content = Content.for('Layout')
+      content.blocks.create!(
+        area: 'footer_messaging',
+        type: 'html',
+        data: { html: html }
+      )
+    end
+  end
+        

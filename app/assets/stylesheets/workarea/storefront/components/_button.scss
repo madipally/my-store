@@ -1,0 +1,57 @@
+.button--secondary {
+    padding: $button-secondary-padding;
+    color: $button-secondary-color;
+    font-size: $button-secondary-font-size;
+    font-family: $button-seconday-font-family;
+    font-weight: $font-weight-bold;
+    background: $button-secondary-bg-color;
+    border: 3px solid $button-secondary-color;
+
+    &:hover {
+        color: $button-color;
+        background-color: $button-secondary-bg-color-hover;
+
+        .svg-icon {
+            fill: $button-secondary-bg-color;
+        }
+    }
+
+    &[disabled]:hover {
+        .svg-icon {
+            fill: $font-color;
+        }
+    }
+
+    .inline-form & {
+        padding: $button-secondary-padding-inline;
+    }
+}
+
+.button--primary {
+    padding: $button-secondary-padding;
+    color: $button-secondary-color;
+    font-size: $button-secondary-font-size;
+    font-family: $button-seconday-font-family;
+    font-weight: $font-weight-bold;
+    background: $button-secondary-bg-color;
+    border: 4px solid $button-secondary-color;
+
+    &:hover {
+        color: $button-color;
+        background-color: $button-secondary-bg-color-hover;
+
+        .svg-icon {
+            fill: $button-secondary-bg-color;
+        }
+    }
+
+    &[disabled]:hover {
+        .svg-icon {
+            fill: $font-color;
+        }
+    }
+
+    .inline-form & {
+        padding: $button-secondary-padding-inline;
+    }
+}

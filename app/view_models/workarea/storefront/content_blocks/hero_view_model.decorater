@@ -1,0 +1,12 @@
+module Workarea
+  decorate Storefront::ContentBlocks::HeroViewModel do
+    def button_style_class
+      return 'text-button' if data[:style] == 'Text Button'
+
+      classes = ['button']
+      classes << 'button--primary' if data[:ButtonColor] == 'Primary'
+      classes << 'button--secondary' if data[:ButtonColor] == 'Secondary'
+      classes.join(' ')
+    end
+  end
+end
